@@ -6,24 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <div class="sidebar">
-      <div class="title-logo">Dashboard</div>
+      <div class="title-logo">
+        <ul>
+          <li><i class="material-icons" >dashboard</i> <span class="nav-text">Dashboard</span></li>
+        </ul>
+      </div>
       <div class="nav1">
-        <div><a href="#">Home</a></div>
-        <div><a href="#">Profile</a></div>
-        <div><a href="#">Messages</a></div>
-        <div><a href="#">History</a></div>
-        <div><a href="#">Tasks</a></div>
-        <div><a href="#">Communities</a></div>
+        <ul>
+          <li><a href="#"><i class="material-icons">homec</i>Home</a></li>
+          <li><a href="#"><i class="material-icons">facec</i>Profile</a></li>
+          <li><a href="#"><i class="material-icons">messagec</i>Messages</a></li>
+          <li><a href="#"><i class="material-icons">bookc</i>History</a></li>
+          <li><a href="#"><i class="material-icons">taskc</i>Tasks</a></li>
+          <li><a href="#"><i class="material-icons">peoplec</i>Communities</a></li>
+        </ul>
       </div>
       <div class="nav2">
-        <div><a href="#">Settings</a></div>
-        <div><a href="#">Support</a></div>
-        <div><a href="#">Privacy</a></div>
+        <ul>
+          <li><a href="#"><i class="material-icons">settingsc</i>Settings</a></li>
+          <li><a href="#"><i class="material-icons">supportc</i>Support</a></li>
+          <li><a href="#"><i class="material-icons">lockc</i>Privacy</a></li>
+        </ul>
       </div>
     </div>
     
@@ -31,7 +40,7 @@
     <div class="header">
       <div class="header-row">
         <div class="search-line">
-          <img src="./img/search.svg" alt="searching" id="search-img">
+          <img src="./img/search.svg" alt="searching" id="search-img" style="text-align: center;">
           <input type="text" id="search">
         </div>
         <div>
