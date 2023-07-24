@@ -1,8 +1,70 @@
 .container {
+  border: 1px red solid;
   display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 6fr;
 }
 
-.item {
-  height: 25px;
-  background: orange;
+.sidebar {
+  border: 1px green solid;
+  background: deepskyblue;
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: white;
+  display: grid;
+  grid-template-rows: 2;
+}
+
+.main {
+  background: blue;
+}
+
+.search-line {
+  width: 50vw;
+}
+
+#search {
+  background-color: rgb(237, 238, 248);
+  border-radius: 10px;
+  width: 45vw;
+  font-size: 1rem;
+}
+
+#search-img, #bell-ring {
+  height: 1.5rem;
+}
+
+#account {
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#account-big {
+  height: 75px;
+  background-color: white;
+  border-radius: 50%; 
+}
+
+.header-row {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+#account-name {
+  grid-column: span 2;
+  justify-self: center;
+  align-self: center;
+  font-weight: 750;
 }
