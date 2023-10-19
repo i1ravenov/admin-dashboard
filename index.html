@@ -11,12 +11,10 @@
 
 <body>
   <div class="container">
-    <div class="sidebar">
-      <div class="title-logo">
-        <ul>
-          <li><i class="material-icons" >dashboard</i> <span class="nav-text">Dashboard</span></li>
-        </ul>
-      </div>
+    <nav class="sidebar">
+      <h1>
+        <a href="#"><i class="material-icons" style="font-size: 3rem; margin-right: 10px;">dashboard</i> <span class="nav-text" style="font-weight: 800; font-size: 2.5rem;">Dashboard</span></a>
+      </h1>
       <div class="nav1">
         <ul>
           <li><a href="#"><i class="material-icons">homec</i>Home</a></li>
@@ -34,7 +32,7 @@
           <li><a href="#"><i class="material-icons">lockc</i>Privacy</a></li>
         </ul>
       </div>
-    </div>
+    </nav>
     
     
     <div class="header">
@@ -43,21 +41,29 @@
           <img src="./img/search.svg" alt="searching" id="search-img" style="text-align: center;">
           <input type="text" id="search">
         </div>
-        <div>
-          <img src="./img/bell-ring.svg" alt="bell-ring" id="bell-ring">
+        <div class="account">
+          <div>
+            <img src="./img/bell-ring.svg" alt="bell-ring" id="bell-ring">
+          </div>
+          <div id="avatar">
+            <img src="./img/account.svg" alt="account" id="account">
+          </div>
+          <div id="account-name">Morgan Oakley</div>
         </div>
-        <div id="avatar">
-          <img src="./img/account.svg" alt="account" id="account">
-        </div>
-        <div id="account-name">Morgan Oakley</div>
       </div>
 
       <div class="header-row">
-        <img src="./img/account.svg" alt="account" id="account-big">
-        <div class="greet"><span id="greet">Hi there,</span> <span id="name">Morgan Oakley (@morgan)</span></div>
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
+        <div class="account-greet">
+          <img src="./img/account.svg" alt="account" id="account-big">
+          <div class="greet">
+            <span id="greet">Hi there,</span> <br><span id="name">Morgan Oakley (@morgan)</span>
+          </div>
+        </div>
+        <div class="new-upload-share-btns">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
       </div>
     </div>
 
