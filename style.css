@@ -1,7 +1,10 @@
 :root {
   --blue: rgb(1, 169, 224);
   --white: rgb(234, 236, 248);
-  --avatar: url(./img/1.jpg);
+  --avatar1: url(./img/1.jpg);
+  --avatar2: url(./img/2.jpg);
+  --avatar3: url(./img/3.jpg);
+  --avatar4: url(./img/4.jpg);
 }
 
 body {
@@ -71,7 +74,7 @@ a {
 }
 
 .picture {
-  background: var(--avatar) center / cover no-repeat;
+  background: var(--avatar1) center / cover no-repeat;
   height: 80px;
   width: 80px;
   border-radius: 50%;
@@ -154,18 +157,25 @@ li {
 
 .main {
   display: grid;
+  gap: 20px;
   grid-template-areas: 
     "proj announcements"
     "proj trending";
 }
 
+h3 {
+  font-size: 1.7rem;
+}
+
 .projects {
   grid-area: proj;
+  padding-left: 20px;
 }
 
 .projects .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .card {
@@ -174,33 +184,79 @@ li {
   justify-content: space-between;
   background-color: white;
   padding: 15px;
-  margin: 15px;
   border-left: 5px solid;
   border-radius: 10px;
   border-left-color: orange;
   box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
 }
 
+.card .text {
+  padding: 40px; 
+}
+
 .card .actions {
   display: flex;
-  flex-direction: row;
   justify-content: end;
   gap: 15px;
 }
 
 .announcements {
   grid-area: announcements;
+  width: 350px;
 }
 
 .trending {
   grid-area: trending;
+  width: 350px;
 }
 
 #card-header {
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 #card-text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.anntext {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.anntext > h5 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.anntext > hr {
+  margin: 40px;
+}
+
+.trending .profiles {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.account .picture {
+  width: 65px;
+  height: 65px;
+  margin: 15px 0px 10px 15px;
+}
+
+.account4 .picture {
+  background-image: var(--avatar4);
+}
+
+.account3 .picture {
+  background-image: var(--avatar3);
+}
+
+.account1 .picture {
+  background-image: var(--avatar2);
+}
+
+.trend > .user {
+  font-weight: 800;
 }
